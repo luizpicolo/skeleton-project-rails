@@ -1,0 +1,23 @@
+development: &dev
+  adapter: mysql2
+  encoding: utf8
+  database: autoescolauniao_dev
+  pool: 5
+  username: root
+  password: root
+  #socket: /var/run/mysqld/mysqld.sock
+
+test: &test
+  adapter: mysql2
+  encoding: utf8
+  database: autoescolauniao_test
+  pool: 5
+  username: root
+  password: root
+  #socket: /var/run/mysqld/mysqld.sock
+
+staging:
+  <<: *dev
+
+production:
+  <<: *dev
