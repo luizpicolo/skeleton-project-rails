@@ -36,12 +36,18 @@ group :development, :test do
   gem 'mina'
   gem 'mysql2'
   gem 'rspec-rails', '>= 3.1.0'
-  gem "rubycritic", :require => false
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
-  gem 'simplecov', :require => false
   gem 'spring'
   gem 'rename'
+  
+  # Ruby Sadist :)
+  gem 'metric_fu'
+  gem 'sandi_meter'
+  gem 'simplecov', require: false
+  gem 'rubycritic', require: false
+  gem 'rubocop', require: false
+  gem 'brakeman', require: false
 end
 
 group :staging, :production do
