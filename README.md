@@ -76,7 +76,7 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
  - turnout  
 
 ______
-Creaty by Luiz Picolos  
+Create with :heart: by Luiz Picolos  
  
 
 
