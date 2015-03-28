@@ -17,6 +17,67 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
 **Third step:** Within of your project, execute this command
 
     bundle install && rake db:migrate && rake db:seed
+    
+**Final step:** Rename yout project
+
+    rails g rename:app_to NEW_NAME
+
+# All Gems  
+  
+## Application Gems
+ - alert_message   
+ - bootstrap-sass   
+ - bootstrap-wysihtml5-rails-font-awesome   
+ - carrierwave   
+ - cancancan   
+ - coffee-rails   
+ - devise   
+ - devise-bootstrap-views   
+ - figaro   
+ - jbuilder   
+ - jquery-rails   
+ - jquery-turbolinks    
+ - mini_magick    
+ - modernizr-rails    
+ - rails-i18n    
+ - rails-env    
+ - rails_admin    
+ - randumb    
+ - sass-rails    
+ - turbolinks    
+ - uglifier    
+
+## Development and test Gems
+
+ - better_errors    
+ - binding_of_caller    
+ - capybara    
+ - database_rewinder    
+ - email_spec    
+ - factory_girl_rails    
+ - faker    
+ - mina    
+ - mysql2    
+ - rspec-rails       
+ - selenium-webdriver    
+ - shoulda-matchers        
+ - spring    
+ - rename     
+ - metric_fu
+ - simplecov    
+ - rubycritic    
+ - rubocop   
+
+## Production and staging Gems
+
+ - passenger    
+ - pg    
+ - therubyracer    
+ - turnout  
+
+______
+Creaty by Luiz Picolos  
+ 
 
 
 
