@@ -1,7 +1,7 @@
 development: &dev
   adapter: mysql2
   encoding: utf8
-  database: autoescolauniao_dev
+  database: db_dev
   pool: 5
   username: root
   password: root
@@ -10,7 +10,7 @@ development: &dev
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: autoescolauniao_test
+  database: db_test
   pool: 5
   username: root
   password: root
