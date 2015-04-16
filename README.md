@@ -16,7 +16,7 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
 
 **Third step:** Within of your project, execute this command
 
-    bundle install && && rake db:create && rake db:migrate && rake db:seed
+    bundle install && rake db:create && rake db:migrate && rake db:seed
 
 **Final step:** Rename yout project
 
