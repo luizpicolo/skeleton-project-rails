@@ -59,6 +59,10 @@ task :setup => :environment do
 
   queue! %[touch "#{deploy_to}/shared/config/application.yml"]
   queue  %[echo "-----> Be sure to edit 'shared/config/application.yml'."]
+  
+  # Create secrets_token
+  queue! %[touch "#{deploy_to}/shared/config/secrets.yml"]
+  queue  %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 
   # sidekiq needs a place to store its pid file and log file
   queue! %[mkdir -p "#{deploy_to}/shared/pids/"]
