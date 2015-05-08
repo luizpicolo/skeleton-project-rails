@@ -3,42 +3,44 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rvm'
 
+set :ruby_version, ''
+
 # Repository project
-set :repository, 'git@bitbucket.org:agencia-w3case/boletinonline.git'
+set :repository, ''
 
 # Server Production
 task :production do
   set :rails_env, 'production'
-  set :user, 'boletimonlineanaec'
-  set :domain, 'app.w3case.com.br'
-  set :deploy_to, '/home/boletimonlineanaec/public_html/railsapp'
-  set :branch, 'deploy'
+  set :user, ''
+  set :domain, ''
+  set :deploy_to, ''
+  set :branch, ''
 end
 
 # Server Staging
 task :staging do
   set :rails_env, 'staging'
-  set :user, 'boletinonline_anaec'
-  set :domain, '192.168.1.150'
-  set :deploy_to, '/home/boletinonline_anaec/public_html/railsapp'
-  set :branch, 'master'
+  set :user, ''
+  set :domain, ''
+  set :deploy_to, ''
+  set :branch, ''
 end
 
 # Server development
-# task :development do
-#   set :rails_env, 'development'
-#   set :user, ''
-#   set :domain, ''
-#   set :deploy_to, ''
-#   set :branch, 'development'
-# end
+task :development do
+  set :rails_env, 'development'
+  set :user, ''
+  set :domain, ''
+  set :deploy_to, ''
+  set :branch, ''
+end
 
 # Fix
 set :term_mode, nil
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'log', 'tmp', 'config/application.yml']
+set :shared_paths, ['config/database.yml', 'log', 'tmp', 'config/application.yml', 'config/secrets.yml']
 
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
@@ -48,7 +50,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use[ruby-2.1.3@boilerplate]'
+  invoke :"rvm:use[ruby-#{ruby_version}@#{user}]"
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
@@ -77,6 +79,9 @@ task :setup => :environment do
 
   queue! %[touch "#{deploy_to}/shared/config/application.yml"]
   queue  %[echo "-----> Be sure to edit 'shared/config/application.yml'."]
+
+  queue! %[touch "#{deploy_to}/shared/config/secrets.yml"]
+  queue  %[echo "-----> Be sure to edit 'shared/config/secrets.yml'."]
 end
 
 # Show logs
