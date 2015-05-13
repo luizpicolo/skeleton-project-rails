@@ -1,6 +1,8 @@
 # Skeleton Project Rails
 **Base to start your project**
 
+**This is work in progress**
+
 It's based on Rails 4.2.1 and Ruby 2.2.1.
 
 ## How to use
