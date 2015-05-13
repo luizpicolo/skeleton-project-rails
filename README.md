@@ -4,7 +4,7 @@
 It's based on Rails 4.2.1 and Ruby 2.2.1.
 
 ## How to use
-**First step:** Clone the repository added the name of your project
+**First step:** Clone the repository adding the name of your project
 
     git clone git@github.com:luizpicolo/skeleton-project-rails.git
 
@@ -18,7 +18,7 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
 
     bundle install && rake db:create && rake db:migrate && rake db:seed
 
-**Final step:** Rename yout project
+**Final step:** Rename your project
 
     rails g rename:app_to NEW_NAME
 
