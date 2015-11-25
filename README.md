@@ -3,7 +3,7 @@
 
 **This is work in progress**
 
-It's based on Rails 4.2.1 and Ruby 2.2.1.
+It's based on Rails 4.2.4 and Ruby 2.2.1.
 
 ## How to use
 **First step:** Clone the repository adding the name of your project
@@ -28,19 +28,23 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
 
 ## Application Gems
  - alert_message
- - bootstrap-sass
+ - bourbon
+ - bootstrap-wysihtml5-rails
  - bootstrap-wysihtml5-rails-font-awesome
  - carrierwave
+ - carrierwave-ftp
  - cancancan
  - coffee-rails
  - devise
- - devise-bootstrap-views
  - figaro
+ - htmlcompressor
  - jbuilder
  - jquery-rails
  - jquery-turbolinks
  - mini_magick
  - modernizr-rails
+ - neat
+ - rails
  - rails-i18n
  - rails-env
  - rails_admin
@@ -48,6 +52,7 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
  - sass-rails
  - turbolinks
  - uglifier
+ - pg
 
 ## Development and test Gems
 
@@ -59,23 +64,19 @@ It's based on Rails 4.2.1 and Ruby 2.2.1.
  - factory_girl_rails
  - faker
  - mina
- - mysql2
  - rspec-rails
  - selenium-webdriver
  - shoulda-matchers
  - spring
  - rename
- - metric_fu
  - simplecov
- - rubycritic
- - rubocop
 
 ## Production and staging Gems
 
  - passenger
- - pg
  - therubyracer
  - turnout  
 
 ______
-Create with <3 by Luiz Picolos  
+Created with <3 by [Luiz Picolo](https://github.com/luizpicolo)
+and [Gabriel Medina](https://github.com/gabrielmedina)

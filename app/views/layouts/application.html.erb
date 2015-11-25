@@ -1,13 +1,45 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="pt-br">
 <head>
-  <title>SkeletonProjectRails</title>
+  <%= favicon_link_tag 'logo.png' %>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+
+  <title>Skeleton Project Rails</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= javascript_include_tag :modernizr %>
 </head>
 <body>
-  <%= render "layouts/alerts" %>
-  <%= yield %>
+  <%= render 'layouts/alerts' %>
+
+  <header class="header">
+    <%= image_tag 'logo.png' %>
+    <h1>Skeleton Project Rails</h1>
+  </header>
+
+  <main class="main">
+    <%= yield %>
+  </main>
+
+  <footer class="footer">
+    <small>
+      Created with <span class="ion-heart"></span> by
+      <%= link_to 'Luiz Picolo', 'https://github.com/luizpicolo' %> and
+      <%= link_to 'Gabriel Medina', 'https://github.com/gabrielmedina' %>
+      <br>
+      <%= link_to 'https://github.com/luizpicolo/skeleton-project-rails' do %>
+        <span class="ion-fork-repo"></span> Fork it on GitHub
+      <% end %>
+    </small>
+  </footer>
+
 </body>
 </html>

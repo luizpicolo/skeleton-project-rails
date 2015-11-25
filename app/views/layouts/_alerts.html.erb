@@ -4,8 +4,7 @@
 			key = 'danger'
 		end
 	%>
-    <div class="alert-message alert-message-<%= key %>">
-      <button type="button" class="close">&times;</button>
-      <%= value.html_safe %>
-    </div>
+	<div class="alert-message alert-message-<%= key %>">
+		<%= value.html_safe %>
+	</div>
 <% end %>
