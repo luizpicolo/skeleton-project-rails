@@ -12,21 +12,21 @@
  *
  *= require_self
  *= require alert_message
- *= require devise_bootstrap_views
- */
+*/
 
- // Bootstrap
- @import "bootstrap-sprockets";
- @import "bootstrap";
+// librarys
+@import "bourbon";
+@import "neat";
 
- // Devise
- @import "devise";
+// light
+@import "light/breakpoints";
+@import "light/grid";
+@import "light/normalize";
 
- .margin-top {
-   margin-top: 100px;
- }
+// device
+@import "devise/devise";
 
- .btn-black {
-   background: #333;
-   color: #FFF;
- }
+// project
+@import "project/default";
+@import "project/header";
+@import "project/typography";
