@@ -8,6 +8,7 @@ $container-lg: 1120px;
 
 
 .container {
+  @include row;
   padding: 0 15px;
 
   @include media($screen-sm) {
@@ -24,18 +25,6 @@ $container-lg: 1120px;
   }
 }
 
-
 .row {
   @include row;
-}
-
-
-@include media($screen-md) {
-  .content {
-    @include span-columns(8);
-  }
-
-  .aside {
-    @include span-columns(4);
-  }
 }

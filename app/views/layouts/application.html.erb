@@ -21,25 +21,43 @@
   <%= render 'layouts/alerts' %>
 
   <header class="header">
-    <%= image_tag 'logo.png' %>
-    <h1>Skeleton Project Rails</h1>
+    <div class="container">
+      <div class="logo">
+        <%= link_to root_path, class: 'logo__link' do %>
+          <%= image_tag('logo.png', alt: 'Logo description', class: 'logo__image') %>
+        <% end %>
+      </div>
+
+      <a class="nav__btn nav--open ion-navicon" href="#"></a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <%= link_to 'Fork', 'https://github.com/luizpicolo/skeleton-project-rails', class: 'nav__link' %>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="main">
+  <div class="main">
     <%= yield %>
-  </main>
+  </div>
 
   <footer class="footer">
-    <small>
-      Created with <span class="ion-heart"></span> by
-      <%= link_to 'Luiz Picolo', 'https://github.com/luizpicolo' %> and
-      <%= link_to 'Gabriel Medina', 'https://github.com/gabrielmedina' %>
-      <br>
-      <%= link_to 'https://github.com/luizpicolo/skeleton-project-rails' do %>
-        <span class="ion-fork-repo"></span> Fork it on GitHub
-      <% end %>
-    </small>
-  </footer>
+    <div class="container">
+      <small class="footer__small">
+        Created with <span class="ion-heart"></span> by
+        <%= link_to 'Luiz Picolo', 'https://github.com/luizpicolo' %> and
+        <%= link_to 'Gabriel Medina', 'https://github.com/gabrielmedina' %>
+      </small>
 
+      <div class="footer__author">
+        <%= link_to 'https://github.com/luizpicolo/skeleton-project-rails' do %>
+          <span class="ion-fork-repo"></span> Fork it on GitHub
+        <% end %>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

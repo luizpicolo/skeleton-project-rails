@@ -1,0 +1,7 @@
+// aside
+
+@include media($screen-sm) {
+  .aside {
+    @include span-columns(4);
+  }
+}

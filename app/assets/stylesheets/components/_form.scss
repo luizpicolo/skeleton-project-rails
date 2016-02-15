@@ -1,0 +1,50 @@
+// form
+
+.form {
+
+}
+
+.form__field {
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  display: block;
+
+  font-size: 1rem;
+
+  margin-bottom: .2rem;
+}
+
+
+%fields {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: .8rem;
+}
+
+.form__input {
+  @extend %fields;
+}
+
+.form__select {
+  @extend %fields;
+}
+
+.form__textarea {
+  @extend %fields;
+  min-height: 6rem;
+}
+
+
+.form__submit {
+  text-align: right;
+}
+
+
+@include media($screen-md) {
+  .form__textarea {
+    min-height: 10rem;
+  }
+}

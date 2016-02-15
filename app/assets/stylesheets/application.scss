@@ -10,23 +10,27 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_self
  *= require alert_message
+ *= require_self
 */
 
 // librarys
 @import "bourbon";
 @import "neat";
 
-// light
-@import "light/breakpoints";
-@import "light/grid";
-@import "light/normalize";
+// base
+@import "base/variables";
+@import "base/breakpoints";
+@import "base/grid";
+@import "base/normalize";
+@import "base/typography";
+@import "base/default";
 
-// device
-@import "devise/devise";
+// devise
+@import "devise/*";
 
-// project
-@import "project/default";
-@import "project/header";
-@import "project/typography";
+// layout
+@import "layout/*";
+
+// components
+@import "components/*";

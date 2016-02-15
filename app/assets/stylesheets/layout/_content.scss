@@ -1,0 +1,7 @@
+// content
+
+@include media($screen-sm) {
+  .content {
+    @include span-columns(8);
+  }
+}
