@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require project/alert
 //= require alert_message
+//= require_tree ./project
 //= require turbolinks

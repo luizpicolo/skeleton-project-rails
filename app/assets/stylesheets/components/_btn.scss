@@ -1,0 +1,16 @@
+// btn
+
+.btn {
+  display: inline-block;
+
+  font-size: 1rem;
+
+  padding: .8rem 1.4rem;
+
+  @include transition(.15s ease);
+
+  &:hover,
+  &:focus {
+    
+  }
+}

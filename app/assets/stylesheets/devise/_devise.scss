@@ -2,122 +2,130 @@
 
 $devise-white: #fff;
 $devise-black: #000;
-$devise-primary: #333;
+$devise-primary: #444;
 
-.devise {
+
+.devise__body {
   font-family: 'Open Sans', sans-serif;
-  font-size: .9em;
+  font-size: .9rem;
   text-align: center;
-  background: darken($devise-white, 4%);
+  background: darken($devise-white, 6%);
 
-  padding: 20px 20px 40px;
+  padding: 1.5rem;
+
+  label,
+  input,
+  textarea,
+  button {
+    outline: none;
+
+    color: lighten($devise-black, 50%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: normal;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
-.devise-content {
+.devise__content {
   width: 100%;
 
   text-align: left;
 
-  padding: 30px;
+  padding: 2rem;
 
   background: $devise-white;
   border-radius: 4px;
 }
 
 
-.devise-logo {
+.devise__logo {
   margin: 0;
 }
 
-.devise-title {
+.devise__title {
   color: $devise-primary;
-  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   text-align: center;
 
-  margin: 0 0 15px;
+  margin: 0 0 1rem;
 }
 
 
-.devise-field {
-  margin-bottom: 20px;
+.devise__field {
+  margin-bottom: 1.5rem;
 
   label {
     display: block;
-    color: lighten($devise-black, 40%);
-    margin-bottom: 5px;
+    margin-bottom: .25rem;
   }
 
   input {
-    outline: none;
-
-    color: lighten($devise-black, 20%);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: normal;
+    color: rgba($devise-black,.6);
 
     width: 100%;
-    height: 40px;
-    line-height: 40px;
 
-    padding: 0 12px;
+    padding: .8rem .9rem;
 
     border: 0;
-    border-radius: 4px;
+    border-radius: .2rem;
     background: rgba($devise-black, .05);
 
-    box-shadow: inset 0 1px 0 rgba($devise-black, .05);
+    box-shadow: inset 0 .1rem 0 rgba($devise-black, .05);
 
     &:focus {
-      outline: none;
       background: rgba($devise-black,.1);
     }
   }
 }
 
-.devise-checkbox {
+.devise__checkbox {
   position: relative;
 
   input {
     position: absolute;
-    top: 4px;
+    top: .4rem;
     left: 0;
   }
 
   label {
     cursor: pointer;
     display: block;
-    color: lighten($devise-black, 40%);
-    padding-left: 20px;
+    padding-left: 1.3rem;
   }
 }
 
-.devise-submit {
+.devise__submit {
   position: relative;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 
-.devise-btn {
+.devise__btn {
   cursor: pointer;
 
   position: relative;
   display: block;
 
   width: 100%;
-  height: 40px;
-  line-height: 40px;
 
-  color: $devise-white;
-  font-size: 1em;
-  font-weight: 600;
+  color: $devise-white !important;
+  font-size: .9rem;
+  font-weight: 600 !important;
 
-  padding: 0 20px;
+  padding: .7rem 1.3rem;
 
   border: 0;
-  border-radius: 4px;
+  border-radius: .2rem;
   background: darken($devise-primary, 2%);
-  border-bottom: solid 2px darken($devise-primary, 10%);
+  border-bottom: solid .15rem darken($devise-primary, 10%);
 
   outline: none;
 
@@ -127,17 +135,18 @@ $devise-primary: #333;
   }
 
   &:active {
-    top: 1px;
+    top: .15rem;
+    padding: .75rem 1.4rem;
     border: 0;
   }
 }
 
-.devise-links {
-  padding-top: 20px;
+.devise__links {
+  padding-top: 1rem;
 
   a {
-    color: lighten($devise-black, 50%);
-    font-size: .95em;
+    color: darken($devise-white, 50%);
+    font-size: .9rem;
     text-decoration: none;
 
     &:hover {
@@ -148,30 +157,26 @@ $devise-primary: #333;
 
 
 @media screen and (min-width: 360px) {
-  .devise-body {
-    font-size: .96em;
-  }
-
-  .devise-content {
-    width: 320px;
+  .devise__content {
+    max-width: 20rem;
     margin: 0 auto;
   }
 
-  .devise-logo {
-    margin: 30px 0 0;
+  .devise__logo {
+    margin: 2rem 0 0;
   }
 
-  .devise-col {
+  .devise__col {
     float: left;
     width: 50%;
   }
 
-  .devise-submit {
+  .devise__submit {
     text-align: right;
     margin-top: 0;
   }
 
-  .devise-btn {
+  .devise__btn {
     display: inline-block;
     width: auto;
   }

@@ -1,28 +1,12 @@
-<%= render 'layouts/head_devise' %>
+<h2>Resend unlock instructions</h2>
 
-<body class="devise">
-  <%= render 'layouts/alerts' %>
+<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
 
-	<section class="container">
-		<h1 class="devise-logo">
-      <%= image_tag('admin/logo.png') %>
-    </h1>
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %></div>
 
-		<div class="devise-content">
-      <h2 class="devise-title">Reenviar instruções para desbloquear</h2>
+  <div><%= f.submit "Resend unlock instructions" %></div>
+<% end %>
 
-      <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-        <div class="devise-field">
-          <%= f.label :email %>
-          <%= f.email_field :email, autofocus: true %>
-        </div>
-
-        <div class="devise-submit">
-          <%= f.submit 'Reenviar', class: 'devise-btn' %>
-        </div>
-      <% end %>
-
-      <%= render "devise/shared/links" %>
-    </div>
-  </section>
-</body>
+<%= render "devise/shared/links" %>

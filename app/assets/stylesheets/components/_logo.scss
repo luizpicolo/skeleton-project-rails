@@ -1,0 +1,23 @@
+// logo
+
+.logo {
+  margin: 0;
+  text-align: center;
+}
+
+.logo__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo__image {
+
+}
+
+@include media($screen-md) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

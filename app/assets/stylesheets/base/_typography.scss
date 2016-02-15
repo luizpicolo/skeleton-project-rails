@@ -4,7 +4,11 @@ $titles: h1, h2, h3, h4, h5, h6;
 
 @each $title in $titles {
   #{$title} {
+    font-family: $family-title;
     font-size: 1em;
-    margin: 0 0 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin: 0 0 1rem;
   }
 }

@@ -10,8 +10,7 @@ html {
   font-family: sans-serif; // 1
   -ms-text-size-adjust: 100%; // 2
   -webkit-text-size-adjust: 100%; // 2
-
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 //
@@ -20,7 +19,6 @@ html {
 
 body {
   margin: 0;
-
   overflow-x: hidden;
 }
 
@@ -426,16 +424,4 @@ table {
 td,
 th {
   padding: 0;
-}
-
-
-// Block
-// ==========================================================================
-
-//
-// For block elements.
-//
-
-.block {
-  display: block;
 }
