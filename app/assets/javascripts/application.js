@@ -16,3 +16,26 @@
 //= require alert_message
 //= require_tree ./project
 //= require turbolinks
+
+$(function(){
+  // link
+  link.back(
+    $('.link--back')
+  );
+
+  link.current(
+    'link--current'
+  );
+
+  link.prevent(
+    $('.link--prevent')
+  );
+
+  // nav
+  nav.open(
+    $('html'),
+    $('.nav__link'),
+    $('.nav__btn'),
+    'nav--opened'
+  );
+});
