@@ -1,24 +1,30 @@
-# README
+# Skeleton Project Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Base to start your project
 
-Things you may want to cover:
+**This is work in progress**
 
-* Ruby version
+It's based on Rails 5.0.0 and Ruby 2.3.1.
 
-* System dependencies
+## How to use
 
-* Configuration
+**First step:** Clone the repository adding the name of your project
 
-* Database creation
+    git clone git@github.com:luizpicolo/skeleton-project-rails.git
 
-* Database initialization
+**Second step:** Rename the files and change the database configuration
 
-* How to run the test suite
+    cp config/database.example.yml config/database.yml &&
+    cp config/application.example.yml config/application.yml &&
+    cp config/secrets.example.yml config/secrets.yml
 
-* Services (job queues, cache servers, search engines, etc.)
+**Third step:** Within of your project, execute this command
 
-* Deployment instructions
+    bundle install && rails db:create && rails db:migrate && rails db:seed
 
-* ...
+**Final step:** Rename your project
+
+    rails g rename:app_to NEW_NAME
+______
+Created with <3 by [Luiz Picolo](https://github.com/luizpicolo)
+and [Gabriel Medina](https://github.com/gabrielmedina)
