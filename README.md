@@ -4,7 +4,7 @@ Base to start your project
 
 **This is work in progress**
 
-It's based on Rails 5.0.0 and Ruby 2.3.1.
+It's based on Rails 5.0.1 and Ruby 2.3.3.
 
 ## How to use
 
