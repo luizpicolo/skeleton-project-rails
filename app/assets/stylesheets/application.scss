@@ -15,18 +15,7 @@
 */
 
 // librarys
-@import "bourbon";
-@import "neat";
-
-// light
-@import "light/breakpoints";
-@import "light/grid";
-@import "light/normalize";
+@import "bulma";
 
 // device
 @import "devise/devise";
-
-// project
-@import "project/default";
-@import "project/header";
-@import "project/typography";

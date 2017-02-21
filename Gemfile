@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.3.3'
 
 gem 'alert_message'
-gem 'bourbon'
 gem 'bootstrap-wysihtml5-rails'
 gem 'bootstrap-wysihtml5-rails-font-awesome'
+gem "bulma-rails", "~> 0.3.1"
 gem 'carrierwave'
 gem 'carrierwave-ftp', require: 'carrierwave/storage/sftp'
 gem 'cancancan'
@@ -19,12 +19,10 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'mini_magick'
 gem 'modernizr-rails'
-gem 'neat'
 gem 'rails', '>= 5.0.0'
 gem 'rails-i18n'
 gem 'rails-env'
-gem 'remotipart', github: 'mshibuya/remotipart'
-gem 'rails_admin', github: 'luizpicolo/rails_admin'
+gem 'rails_admin'
 gem 'rails_admin-i18n'
 gem 'randumb'
 gem 'sass-rails'
@@ -54,13 +52,13 @@ group :development do
   gem 'better_errors'
   gem 'listen', '~> 3.0.5'
   gem 'web-console'
-  gem 'mina'
+  gem 'mina', '0.3.8'
   gem 'rename'
 end
 
 group :staging, :production do
   gem 'passenger'
-  gem 'therubyracer'
+  gem 'mini_racer'
 end
 
 group :production do

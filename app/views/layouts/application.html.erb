@@ -19,17 +19,17 @@
 </head>
 <body>
   <%= render 'layouts/alerts' %>
-
-  <header class="header">
+  
+  <header class="has-text-centered">
     <%= image_tag 'logo.png' %>
-    <h1>Skeleton Project Rails</h1>
+    <h1 class="title">Skeleton Project Rails</h1>
   </header>
 
   <main class="main">
     <%= yield %>
   </main>
 
-  <footer class="footer">
+  <footer class="has-text-centered">
     <small>
       Created with <span class="ion-heart"></span> by
       <%= link_to 'Luiz Picolo', 'https://github.com/luizpicolo' %> and
@@ -40,6 +40,5 @@
       <% end %>
     </small>
   </footer>
-
 </body>
 </html>
