@@ -1,12 +1,12 @@
 # Configuration all env mail
-ADDRESS:    'smtp.gmail.com'
-PORT:       '587'
-DOMAIN:     'gmail.com'
-USER_NAME:  ''
-PASSWORD:   ''
+SMTP_ADDRESS:    'smtp.gmail.com'
+SMTP_PORT:       '587'
+SMTP_DOMAIN:     'gmail.com'
+SMTP_USER_NAME:  ''
+SMTP_PASSWORD:   ''
 
 # From email
-FROM_MAIL: ''
+SMTP_FROM_MAIL: ''
 
 # Paths and URls
 UPLOAD_HOST:    'http://cnd1.localtest.me:3000/'
